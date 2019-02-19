@@ -21,7 +21,7 @@ To compile the framework for a device use the `device` project property:
   > ./gradlew :greeting:build -Pdevice=true
 ```
 
-To run kotlin tests (including the [common ones](greeting/src/commonTest/kotlin/CalculatorTest.kt))
+To run kotlin tests (including the [common ones](greeting/src/commonTest/kotlin/SharedHelloWorldTest.kt))
 on an iOS simulator execute:
 
 ```

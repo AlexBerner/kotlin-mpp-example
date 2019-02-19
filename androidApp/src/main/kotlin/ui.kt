@@ -5,7 +5,7 @@ import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.widget.LinearLayout
 import android.widget.TextView
-import org.greeting.Factory
+import org.greeting.SharedSpeaker
 import kotlin.properties.Delegates
 
 class MyApplication : Application() {
@@ -25,9 +25,8 @@ class MainActivity : AppCompatActivity() {
         rootLayout = findViewById(R.id.main_view) as LinearLayout
         rootLayout.removeAllViews()
 
-        val product = Factory.create(mapOf("user" to "JetBrains"))
         val tv = TextView(this)
-        tv.text = product.toString()
+        tv.text = SharedSpeaker().platformGreeting()
         rootLayout.addView(tv)
     }
 }

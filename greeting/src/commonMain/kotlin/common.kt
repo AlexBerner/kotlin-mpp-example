@@ -1,9 +1,10 @@
 package org.greeting
 
 expect class Platform() {
-    val platform: String
+    val name: String
 }
 
-class Greeting {
-    fun greeting(): String = "Hello, ${Platform().platform}"
+class SharedSpeaker {
+    fun sharedGreeting(): String = "Hello, Android and iOS worlds!"
+    fun platformGreeting(): String = "Hello, ${Platform().name} world!"
 }
