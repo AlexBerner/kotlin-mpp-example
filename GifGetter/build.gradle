@@ -3,7 +3,7 @@ plugins {
     id 'org.jetbrains.kotlin.multiplatform'
 }
 
-group = 'org.greeting'
+group = 'co.touchlab'
 version = 1.0
 
 android {
@@ -78,8 +78,8 @@ task copyFramework {
         copy {
             from srcFile.parent
             into targetDir
-            include 'greeting.framework/**'
-            include 'greeting.framework.dSYM'
+            include 'GifGetter.framework/**'
+            include 'GifGetter.framework.dSYM'
         }
     }
 }

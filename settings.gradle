@@ -23,5 +23,5 @@ pluginManagement {
 
 enableFeaturePreview('GRADLE_METADATA')
 
-include ':SharedLibrary'
+include ':GifGetter'
 include ':androidApp'
