@@ -1,5 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-          package="org.konan.multiplatform">
+          package="org.touchlab.gifgetter">
     <application
                  android:name=".MyApplication"
                  android:allowBackup="true"

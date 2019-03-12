@@ -78,8 +78,8 @@ task copyFramework {
         copy {
             from srcFile.parent
             into targetDir
-            include 'GifGetter.framework/**'
-            include 'GifGetter.framework.dSYM'
+            include 'GifLibrary.framework/**'
+            include 'GifLibrary.framework.dSYM'
         }
     }
 }

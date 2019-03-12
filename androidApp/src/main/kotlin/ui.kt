@@ -1,12 +1,13 @@
-package org.konan.multiplatform
+package org.touchlab.gifgetter
 
 import android.app.Application
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
-import android.widget.LinearLayout
-import android.widget.TextView
-import org.greeting.SharedSpeaker
-import kotlin.properties.Delegates
+//import android.widget.LinearLayout
+//import android.widget.TextView
+//import org.greeting.SharedSpeaker
+//import org.touchlab.gifgetter.R
+//import kotlin.properties.Delegates
 
 class MyApplication : Application() {
     override fun onCreate() {
@@ -17,16 +18,16 @@ class MyApplication : Application() {
 
 class MainActivity : AppCompatActivity() {
 
-    private var rootLayout: LinearLayout by Delegates.notNull()
+//    private var rootLayout: LinearLayout by Delegates.notNull()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        rootLayout = findViewById(R.id.main_view) as LinearLayout
-        rootLayout.removeAllViews()
+//        rootLayout = findViewById(R.id.main_view) as LinearLayout
+//        rootLayout.removeAllViews()
 
-        val tv = TextView(this)
-        tv.text = SharedSpeaker().platformGreeting()
-        rootLayout.addView(tv)
+//        val tv = TextView(this)
+//        tv.text = SharedSpeaker().platformGreeting()
+//        rootLayout.addView(tv)
     }
 }
